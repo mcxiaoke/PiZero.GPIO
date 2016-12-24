@@ -88,7 +88,7 @@ gpio_t gpio[] = {
 */  {"LED",
         {
             {   "POWER_LED",  SUNXI_GPL(10),  1   },
-            {   "STATUS_LED",  SUNXI_GPA(15),  2   },
+            {   "STATUS_LED",  SUNXI_GPA(17),  2   },
             {
                 {   0,  0,  0}
             },
