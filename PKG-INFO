@@ -1,5 +1,5 @@
 Metadata-Version: 1.1
-Name: pyA20
+Name: pizero
 Version: 0.2.1
 Summary: Control GPIO, I2C and SPI
 Home-page: https://www.olimex.com/
@@ -43,13 +43,13 @@ Description: This package provide methods for controlling GPIO pins, I2C and SPI
             By port name: PH0, PG2, PE10, etc.
             These can be imported from port module:
         
-            >>> from pyA20.gpio import port
+            >>> from pizero.gpio import port
             >>> dir(port)
         
             By connector name and pin number: gpio2p12, gpio3p8, lcdp18, uext1p3 and etc.
             These can be imported from connector module:
         
-            >>> from pyA20.gpio import connector
+            >>> from pizero.gpio import connector
             >>> dir(connector)
         
         Generally these constants are just an offset in the memory from the base GPIO address, so they can
@@ -89,9 +89,9 @@ Description: This package provide methods for controlling GPIO pins, I2C and SPI
         
             #!/usr/bin/env python
         
-            from pyA20.gpio import gpio
-            from pyA20.gpio import port
-            from pyA20.gpio import connector
+            from pizero.gpio import gpio
+            from pizero.gpio import port
+            from pizero.gpio import connector
         
             gpio.init() #Initialize module. Always called first
         
@@ -118,7 +118,7 @@ Description: This package provide methods for controlling GPIO pins, I2C and SPI
         
             #!/usr/bin/env python
         
-            from pyA20 import i2c
+            from pizero import i2c
         
             i2c.init("/dev/i2c-2")  #Initialize module to use /dev/i2c-2
             i2c.open(0x55)  #The slave device address is 0x55
@@ -138,7 +138,7 @@ Description: This package provide methods for controlling GPIO pins, I2C and SPI
         
             #!/usr/bin/env python
         
-            from pyA20 import spi
+            from pizero import spi
         
             spi.open("/dev/spidev2.0")
             #Open SPI device with default settings
@@ -165,11 +165,11 @@ Description: This package provide methods for controlling GPIO pins, I2C and SPI
         
             Changelog
         =========
-            * pyA20 0.2.1 (30 JUN 2015)
+            * pizero 0.2.1 (30 JUN 2015)
                 * Fixed gpio1 connector constants
                 * Fixed issue with SPI xfer function
         
-            * pyA20 0.2.0 (02 SEP 2014)
+            * pizero 0.2.0 (02 SEP 2014)
                 * Updated to enable SPI and I2C control
                 * GPIO constant in separate modules
                 * Added example files

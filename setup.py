@@ -80,26 +80,26 @@ class build_ext(_build_ext):
 
 
 modules = [
-    Extension('pyA20.gpio.gpio', sources=['pyA20/gpio/gpio_lib.c', 'pyA20/gpio/gpio.c']),
+    Extension('pizero.gpio.gpio', sources=['pizero/gpio/gpio_lib.c', 'pizero/gpio/gpio.c']),
 
-    Extension('pyA20.i2c', sources=['pyA20/i2c/i2c_lib.c', 'pyA20/i2c/i2c.c']),
+    Extension('pizero.i2c', sources=['pizero/i2c/i2c_lib.c', 'pizero/i2c/i2c.c']),
 
-    Extension('pyA20.spi', sources=['pyA20/spi/spi_lib.c', 'pyA20/spi/spi.c']),
+    Extension('pizero.spi', sources=['pizero/spi/spi_lib.c', 'pizero/spi/spi.c']),
 
-    Extension('pyA20.gpio.connector', sources=['pyA20/gpio/connector/connector.c']),
+    Extension('pizero.gpio.connector', sources=['pizero/gpio/connector/connector.c']),
 
-    Extension('pyA20.gpio.port', sources=['pyA20/gpio/port/port.c']),
+    Extension('pizero.gpio.port', sources=['pizero/gpio/port/port.c']),
 
 ]
 
 setup(
-    name='pyA20',
+    name='pizero',
     version='0.2.1',
     author='Stefan Mavrodiev',
     author_email='support@olimex.com',
     url='https://www.olimex.com/',
     license='MIT',
-    packages=['pyA20', 'pyA20.gpio'],
+    packages=['pizero', 'pizero.gpio'],
     description='Control GPIO, I2C and SPI',
     long_description=open('README.txt').read() + open('CHANGES.txt').read(),
     classifiers=['Development Status :: 3 - Alpha',
