@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Basic blinking led example.
 
-The led on A20-OLinuXino-MICRO  blinks with rate of 1Hz like "heartbeat".
+The led on Pi Zero-OLinuXino-MICRO  blinks with rate of 1Hz like "heartbeat".
 """
 
 import os

@@ -55,7 +55,7 @@ def check_processor():
                 print ("Detected processor: " + print_color(processor) + " (Probably Allwinner A13)")
 
             elif "sun7i" in processor:
-                print ("Detected processor: " + print_color(processor) + " (Probably Allwinner A20)")
+                print ("Detected processor: " + print_color(processor) + " (Probably Allwinner Pi Zero)")
 
             elif "sun8i" in processor:
                 print ("Detected processor: " + print_color(processor) + " (Probably Allwinner H3)")

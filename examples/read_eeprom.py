@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Read from the EEPROM chip on A20-OLinuXino-MICRO
+"""Read from the EEPROM chip on Pi Zero-OLinuXino-MICRO
 
 On the board there is small chip U3. This is 16kb eeprom memory AT24C16BN.
 The i2c address can be different, but on this specific board is 0x50.
@@ -7,7 +7,7 @@ The i2c address can be different, but on this specific board is 0x50.
 The text will be big mess if python3 is used.
 """
 
-from pyA20 import i2c
+from pizero import i2c
 
 __author__ = "Stefan Mavrodiev"
 __copyright__ = "Copyright 2014, Olimex LTD"

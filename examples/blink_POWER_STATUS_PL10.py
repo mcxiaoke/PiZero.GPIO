@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Basic blinking led example.
 
-The led on A20-OLinuXino-MICRO  blinks with rate of 1Hz like "heartbeat".
+The led on Pi Zero-OLinuXino-MICRO  blinks with rate of 1Hz like "heartbeat".
 """
 
 import os
@@ -12,10 +12,10 @@ if not os.getegid() == 0:
 
 
 from time import sleep
-from pyA20.gpio import gpio
-from pyA20.gpio import port
+from pizero.gpio import gpio
+from pizero.gpio import port
 #//BY CHOW
-from pyA20.gpio import connector
+from pizero.gpio import connector
 
 __author__ = "Stefan Mavrodiev"
 __copyright__ = "Copyright 2014, Olimex LTD"
